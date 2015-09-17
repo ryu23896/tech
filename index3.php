@@ -5,7 +5,7 @@
 <p>テクアカ用練習掲示板</p>
 
 <form method="POST" action="<?php print($_SERVER['PHP_SELF']) ?>">
-<input type="text" name="user_name"><br><br>
+<input type="text" name="user"><br><br>
 <textarea name="message" rows="8" cols="40">
 </textarea><br><br>
 <input type="submit" name="btn1" value="投稿">
@@ -41,12 +41,12 @@ function readData(){
 }
 
 function writeData(){
-$name = $_POST['user_name'];
+$user = $_POST['user'];
 $message = $_POST['message'];
 $message = nl2br($message);
 
 $data = "<hr>\r\n";
-$data = $data."<p>投稿者:".$user_name."</p>\r\n";
+$data = $data."<p>投稿者:".$user."</p>\r\n";
 $data = $data."<p>内容:</p>\r\n";
 $data = $data."<p>".$message."</p>\r\n";
 
