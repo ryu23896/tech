@@ -48,8 +48,7 @@
                 break;
         }
      
-    }else{
-        print 'なんかへん';
+    
     }
 print $answer;  
         
