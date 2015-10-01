@@ -1,6 +1,6 @@
 <html>
     <head>
-        <meta charset-"UTF-8">
+        <meta charset "UTF-8">
               <title>テクアカ用電卓</title>
     </head>
 
@@ -22,32 +22,36 @@
     </body>
 
     <?php
-    $left = $_POST[`leftNumber`];
-    $ope = $_POST[`operator`];
-    $right = $_POST[`rightNumber`];
-    print $left;
-    if ($_SERVER[`REQUEST_METHOD`] == POST) {
+    $left = $_POST['leftNumber'];
+    $ope = $_POST['operator'];
+    $right = $_POST['rightNumber'];
+    
+    
+    
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         switch ($ope) {
-            case `+`:
+            case '+':
                 $answer = $left + $right;
                 break;
-            case `-`:
+            case '-':
                 $answer = $left - $right;
                 break;
-            case `*`:
+            case '*':
                 $answer = $left * $right;
                 break;
-            case `/`:
+            case '/':
                 $answer = $left / $right;
                 break;
             default :
-                print `???`;
+                print '???';
                 break;
         }
      
+    }else{
+        print 'なんかへん';
     }
-print $answer     
+print $answer.'hoge';  
         
     ?>
 </body>
