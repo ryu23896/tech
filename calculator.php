@@ -50,7 +50,7 @@
      
     
     }
-print $answer;  
+print "{$left}  {$ope}  {$right}  は {$answer}  です";  
         
     ?>
 </body>
