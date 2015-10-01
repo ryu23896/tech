@@ -48,9 +48,9 @@
                 break;
         }
      
-    
+    print "{$left}  {$ope}  {$right}  は {$answer}  です"; 
     }
-print "{$left}  {$ope}  {$right}  は {$answer}  です";  
+ 
         
     ?>
 </body>
