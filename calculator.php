@@ -51,7 +51,7 @@
     }else{
         print 'なんかへん';
     }
-print $answer.'hoge';  
+print $answer;  
         
     ?>
 </body>
